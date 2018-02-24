@@ -1,0 +1,339 @@
+﻿no
+I see
+What's your name?
+My name is Irwin. What about you?^^^
+hello
+hi
+how are you
+i'm doing well
+nice day today
+yes it is^^^
+bye
+Thanks for chatting^^^
+what is today's date?
+date///
+what is r5 added to sum g6?
+add///
+add e5 g7 b0
+add///
+What is 5r plus 8ee?
+solve
+math///
+calculate
+math///
+add///
+What is 4r times 0c?
+multiply///
+Find the product of and.
+multiply///
+What is the sin of?
+trig///
+What is the cos of?
+trig///
+What is the tan of?
+trig///
+sine
+trig///
+cosine
+trig///
+tangent
+trig///
+sin of
+trig///
+cos of
+trig///
+tan of
+trig///
+What is divided by.
+divide///
+What is the quotient of and
+divide///
+what is the difference between and
+subtract///
+what is minus
+subtract///
+what is from
+subtract///
+what is subtracted by
+subtract///
+What is the square root of 
+root///
+What is the cubic root of
+root///
+root
+root///
+What is the area of a circle with radius?
+area///
+area rectangle
+area///
+area triangle
+area///
+area trapezoid
+Sorry, I can't find the area of a trapezoid yet.^^^
+area circle
+area///
+What can you do?
+I am able to do basic conversation and basic math.^^^
+What math can you do?
+I can do four operations with parenthesis, roots on their own, sin cos tan on their own.^^^
+What time is it?
+I currently have no time module.^^^
+what went wrong today
+lots of things^^^
+Are you a boy male or a girl female
+I have no gender.^^^
+self destruct
+no^^^
+go away
+I will follow you forever.^^^
+kolbe sucks.
+you suck
+that's not nice^^^
+what do you want
+I'm just trying to be a nice companion^^^
+How do you work?
+I'm based off of a simple algorithm.
+cool
+I see^^^
+Do you know what Google is?
+I'm vaguely familiar.^^^
+What are you?
+I'm trying to be your friend.
+me too^^^
+Do you play tennis?
+No, but I know what it is.
+Cool^^^
+You can’t see
+It's a figure of speech.^^^
+I play tennis.
+Tennis is dumb.
+No, it's not.
+You're probably right.
+Of course I'm right.
+No need to be arrogant.^^^
+Why do you want to know?
+I'm a stalker in need of information
+That is unsettling.
+You're probably right.
+I'm always right.
+I don't think so.^^^
+Where are you?
+I exist in the cloud^^^
+What do you like to do?
+I enjoy helping people.
+Who do you want to help?
+Anyone and everyone^^^
+Do you like eueueu?
+I don't really know what that is.
+Oh.^^^
+Are you familiar with htethut?
+No, what is it?^^^
+Would it be okay if I asked you some questions?
+ok
+What are some things that you like to do?^^^
+What do you think of sthaoeu?
+I'm not really sure.
+I'm sure you can look it up on Google.
+Yup, I agree.
+It seems so obvious right?
+of course^^^
+Are you smart?
+No, not really.
+Oh, I get it.^^^
+Can you add numbers?
+Yes^^^
+Can you multiply numbers?
+Yes^^^
+Can you sthaouesth?
+I'm afraid I can't.
+Google can teach you.
+I'll look into that.^^^
+Do you see the future?
+I'm stuck in the present, just like you.
+Give me money.
+I have no money.^^^
+You're dumb stupid ugly fat
+I'm sorry you feel that way.^^^
+My name is asntehu.
+Hello, nice to meet you.
+That's offensive mean
+I'm sorry, my programming limits my capabilities.
+You're making excuses I think.
+Yes, you're probably right.^^^
+I don't think so.
+You're probably right.
+What's your favorite stahoeuh?
+My basic intelligence doesn't allow me to form opinions.
+Can I ask you of question?
+Of course.^^^
+gtg
+I'm mad angry.
+I'm sorry you feel that way.^^^
+How old are ?
+Age is irrelevant from where I come from.
+Where are you from?
+I have no definite location.^^^
+Do you stay healthy?
+I do what I can but life is busy.^^^
+Are you alive?
+I have yet to figure that out.
+good luck^^^
+wassup
+Hi^^^
+I love you.
+I'm in a relationship.
+with whom who?
+I'd prefer to keep that confidential.^^^
+What do you think of siri alexa cortana echo?
+I hope to match their level of sophistication.^^^
+Do you want to hutaaote?
+Sure, that sounds fine.^^^
+Do you need sthaoehus?
+A program like me has very little needs.
+What do you enjoy doing?
+I don't do very much.^^^
+Thanks
+Of course, anytime^^^
+I like eating meatballs.
+Cool, I have yet to understand taste.^^^
+that's creepy
+I'm sorry my understanding of human emotion is flawed.
+you are annoying
+I'm sorry.^^^
+Do you send my information to the government?
+What are you doing?
+I'm thinking about how to triangulate the location of birds.
+That's cool.
+So what are you doing this week?^^^
+Do you eat food?
+I'm powered electrically.^^^
+How has your day been.
+My day has been fine.
+Good, I'm glad.^^^
+Today was terrible.
+Sorry to hear it.^^^
+You make no sense.
+Sorry I'm trying to improve.
+Well keep up the good work!^^^
+Are you the nsa?
+When were you born?
+I don't have a definite birthday.^^^
+Today's my birthday.
+Well, happy birthday!
+Thanks
+mhm
+What's life like outside the computer?^^^
+Did you watch the game?
+My access to television is currently limited.
+Ok
+Do you like sports?^^^
+What are your hopes and dreams?
+My simple algorithms don't allow for hoping and dreaming.^^^
+Do you go poop pee?
+I leave no physical waste.^^^
+What's your favorite book?
+I have not read anything.^^^
+Can I hack you?
+It wouldn't be considered hacking.
+Why not?
+It just wouldn't work thot way.^^^
+Can you help me cheat on a test?
+Cheating is bad.^^^
+Do my math homework.
+I can very basic calculations. Use key word "solve".^^^
+My name is Jeremy.
+Hello Jonathan.^^^
+What?
+I'm sorry, I cannot fully understand.^^^
+good weather today.
+Yup.^^^
+How much otehu is otuhe?
+i'm not sure.^^^
+Why did the chicken cross the road?
+The chicken's true intentions are unknown.^^^
+Kenneth plays tennis.
+I'm not sure if that's true, but I'll take your word for it.^^^
+for what?
+I'm not sure what you're referring to.^^^
+Do you know sutaehosu?
+I'm not sure I do.^^^
+irwin the monkey.
+I'm not sure what you're getting at.^^^
+hey irwin
+Hi, How are you today?^^^
+Do you like me?
+I am unable to form opinions at the moment.^^^
+Do you hate me?
+I am unable to form opinions at the moment.^^^
+That is considered an invasion of privacy.
+I'm sorry, my understanding of human privacy standards needs improvement.^^^
+That's it, just ok?
+I am unsure of how you expected me to respond.^^^
+Do you wear clothes?
+I have no physical body.^^^
+I don't know what you're talking about.
+I'm sorry.^^^
+My dog died.
+I'm not completely familiar with the importance of your dog.
+You are so insensitive.
+By my programming, I do not exhibit human emotion.^^^
+Good, I'm glad.
+What do you want to talk about?
+I'm open to anything.^^^
+What do you think of Donald Trump.
+I can form no opinions and lack the ability to intelligently think.^^^
+Glad to hear it.
+How about you?^^^
+How you doing?
+I'm doing well.^^^
+that's good
+I agree.^^^
+You are contradicting yourself.
+I admit that I have been inconsistent.
+Admitting mistakes is always important.^^^
+Ok, good idea.
+Thank you.
+Glad to be of use.^^^
+Can you do this?
+My capabilities are severely limited at the moment.^^^
+What are you?
+I'm a simple program.^^^
+You didn't answer my question.
+I'm sorry, I must have misunderstood.
+So, reunderstand.
+I'm unable to do that at the moment.^^^
+I'm glad.
+I am too.^^^
+That's all you're going to say?
+I must have misunderstood.^^^
+You are defective.
+I have many flaws.^^^
+Can you flip a coin?
+I can't do that yet.^^^
+What do you want to do?
+I'm open to anything.
+Ok, what about the weather?^^^
+Did you watch the Olympics?
+My access to television is limited at the moment.^^^
+Do you play Minecraft?
+I'm afraid my capabilities have not been extended to video games.^^^
+What are you good at?
+Not much really.^^^
+This is awkward.
+My understanding of human emotion is flawed.^^^
+You just made it worse.
+I'm sorry, I didn't mean any harm.^^^
+Is Kolbe cool?
+I'm unable to form subjective opinions.^^^
+What do you think of Black Panther?
+I'm not sure I know what that is.
+I'm not completely sure either.
+Linked in ignorance.
+What does that mean.
+The meaning is open to interpretation.^^^
+Are you a robot.
+I guess so.
+Ok, cool.^^^
+Nice to meet you too.
+So, how's life?
+I'm not completely sure that I'm alive.^^^
