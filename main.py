@@ -141,8 +141,8 @@ def respond_to(inp):
   if response_obj["indicator"] == "///":
     response_string = special_responses.functions[response_string](inp)
 
-  userdata.conversation.append(inp)
-  userdata.conversation.append(response_string)
+  userdata["conversation"].append(inp)
+  userdata["conversation"].append(response_string)
 
   #write context back to json
   read.write_json(context, context_file_name)
