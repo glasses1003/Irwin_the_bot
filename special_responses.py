@@ -244,7 +244,7 @@ def area(inp):
     return ("Area of a rectangle with side lengths " + str(numbers[0]) + " and " + str(numbers[1]) + " is " + str(area))
   if "triangle" in key_words or "tri" in key_words:
     area = numbers[0]*numbers[1] * 0.5
-    return("Area of a triangle with b/h ") + str(numbers[0]) + "/" + str(numbers[1] + " is " + str(area))
+    return("Area of a triangle with b/h " + str(numbers[0]) + "/" + str(numbers[1]) + " is " + str(area))
   if "circle" in key_words:
     radius = numbers[0]
     pi = math.pi
@@ -260,3 +260,9 @@ def area(inp):
     return("Area is with radius: " + str(radius) + " with pi: " + str(pi) + " = " + rounded_area_string + " or " + unrounded_area_string)
 functions["area"] = area
 
+class Root():
+  def __init__(self, power, base):
+    self.power = power
+    self.base = base
+
+  def multiply(self,other_root):
