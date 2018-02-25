@@ -55,6 +55,10 @@ def read_json(file_name):
   data = json.load(open(file_name))
   return(data)
 
+def write_json(data, file_name):
+  with open(file_name, 'w') as outfile:
+    json.dump(data, outfile)
+
 convert_to_json("con_log.txt","con_log.json")
   
   
