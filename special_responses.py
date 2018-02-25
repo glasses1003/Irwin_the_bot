@@ -266,3 +266,4 @@ class Root():
     self.base = base
 
   def multiply(self,other_root):
+    pass
