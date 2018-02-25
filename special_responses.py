@@ -1,6 +1,7 @@
 import datetime
 import read
 import math
+import classes
 
 functions = {}
 
@@ -239,31 +240,28 @@ def area(inp):
     if i in simlified:
       key_words.append(i)
 
-  if "square" in key_words or "rectangle" in key_words or "rect" in key_words:
-    area = numbers[0] * numbers[1]
-    return ("Area of a rectangle with side lengths " + str(numbers[0]) + " and " + str(numbers[1]) + " is " + str(area))
-  if "triangle" in key_words or "tri" in key_words:
-    area = numbers[0]*numbers[1] * 0.5
-    return("Area of a triangle with b/h " + str(numbers[0]) + "/" + str(numbers[1]) + " is " + str(area))
-  if "circle" in key_words:
-    radius = numbers[0]
-    pi = math.pi
+  try:
+    if "square" in key_words or "rectangle" in key_words or "rect" in key_words:
+      area = numbers[0] * numbers[1]
+      return(str(area) + ": of rectangle  b/h " + str(numbers[0]) + "/" + str(numbers[1]))
+    if "triangle" in key_words or "tri" in key_words:
+      area = numbers[0]*numbers[1] * 0.5
+      return(str(area) + ": of triangle b/h " + str(numbers[0]) + "/" + str(numbers[1]))
+    if "circle" in key_words:
+      radius = numbers[0]
+      pi = math.pi
 
-    if "diameter" in key_words:#account for radius and diameter options
-      radius = radius/2
-    if 3.14 in numbers: #account for more standard version of pi
-      pi = 3.14
+      if "diameter" in key_words:#account for radius and diameter options
+        radius = radius/2
+      if 3.14 in numbers: #account for more standard version of pi
+        pi = 3.14
 
-    unrounded_area_string = str(radius**2) + " * pi"
-    rounded_area_string = str(pi * radius * radius)
+      unrounded_area_string = str(radius**2) + " * pi"
+      rounded_area_string = str(pi * radius * radius)
 
-    return("Area is with radius: " + str(radius) + " with pi: " + str(pi) + " = " + rounded_area_string + " or " + unrounded_area_string)
+      return(rounded_area_string + ", " + unrounded_area_string + ": area of circle " + str(pi) + " as pi and radius " + str(radius))
+
+  except:
+    return("Did you want to find area? Specify the shape and provide two numbers.")
 functions["area"] = area
 
-class Root():
-  def __init__(self, power, base):
-    self.power = power
-    self.base = base
-
-  def multiply(self,other_root):
-    pass
