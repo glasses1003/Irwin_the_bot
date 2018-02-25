@@ -5,6 +5,7 @@ import special_responses
 
 
 json_file_name = "con_log.json"
+context_file_name = "context_data.json"
 #json object
 data = "placeholder"
 
@@ -46,15 +47,38 @@ def rank_words():
   for key in lines:
     line = lines[key]
     line.rank_words(lines)
+
+def create_user(recipient_id):
+  data_dict = {}
+  data_dict["conversation"] = []
+  data_dict["math"] = []
+  data_dict["name"] = ""
+  return(data_dict)
+
+def get_data(recipient_id):
+  #if user exists
+  if not recipient_id in context:
+    print("New user created " + recipient_id)
+    user_data = create_user(recipient_id)
+    context[recipient_id] = user_data
+    userdata = context[recipient_id]
+  else:
+    print("Returning user " + recipient_id)
+    userdata = context[recipient_id]
+
+  return(userdata)
     
-def start():
+def start(recipient_id):
   #get data
-  global data
+  global data, context, userdata
   data = read.read_json(json_file_name)
+  context = read.read_json(context_file_name)
   #update_line dict
   update_lines_dict()
   #rank all words
   rank_words()
+  #gets or creates data
+  userdata = get_data(recipient_id)
   
 #rank all lines for similarity
 def rank_lines(inp):
@@ -110,15 +134,21 @@ def respond_to(inp):
   followline_choice = []
   for obj in highest_obj:
     followline_choice += obj.follow_lines
-    
-    
+
   response_obj = random.choice(followline_choice)
   response_string = response_obj["string"]
   #check for special responses
   if response_obj["indicator"] == "///":
     response_string = special_responses.functions[response_string](inp)
+
+  userdata.conversation.append(inp)
+  userdata.conversation.append(response_string)
+
+  #write context back to json
+  read.write_json(context, context_file_name)
   return(response_string)
 def test():
+  start()
   while True:
     user_input = input("?: ")
     print(respond_to(user_input))
