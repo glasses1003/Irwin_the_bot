@@ -82,6 +82,9 @@ what went wrong today
 lots of things^^^
 Are you a boy male or a girl female
 I have no gender.^^^
+Is that a no
+I'm having trouble understanding you right now.
+That's ok.^^^
 self destruct
 no^^^
 go away
@@ -240,11 +243,19 @@ It just wouldn't work thot way.^^^
 Can you help me cheat on a test?
 Cheating is bad.^^^
 Do my math homework.
-I can very basic calculations. Use key word "solve".^^^
-My name is Jeremy.
-Hello Jonathan.^^^
+I can do very basic calculations. Use key word "solve".^^^
+Does that mean you can do my math homework.
+Partially, my math skills are not 100% accurate.^^^
+omg, really?
+I think so.^^^
 What?
 I'm sorry, I cannot fully understand.^^^
+Sorry geez.
+That's ok, we all make mistakes.^^^
+Do you want to be my friend?
+Of course.^^^
+I don't know the word interpretation.
+I currently don't have a dictionary module, but google does.^^^
 good weather today.
 Yup.^^^
 How much otehu is otuhe?
