@@ -13,10 +13,6 @@ bot = Bot (ACCESS_TOKEN)
 # We will receive messages that Facebook sends our bot at this endpoint
 @app.route("/", methods=['GET', 'POST'])
 def receive_message():
-
-  #initiate bot
-  main.start()
-
   if request.method == 'GET':
     """Before allowing people to message your bot, Facebook has implemented a verify token
     that confirms all requests that your bot receives came from Facebook."""
@@ -32,6 +28,10 @@ def receive_message():
         if message.get('message'):
           # Facebook Messenger ID for user so we know where to send response back to
           recipient_id = message['sender']['id']
+
+          #initialize bot
+          main.start(recipient_id)
+
           if message['message'].get('text'):
             user_message = message['message'].get('text')
             response_sent_text = get_message(user_message)
