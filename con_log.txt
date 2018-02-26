@@ -68,8 +68,6 @@ area rectangle
 area///
 area triangle
 area///
-area trapezoid
-Sorry, I can't find the area of a trapezoid yet.^^^
 area circle
 area///
 What can you do?
@@ -369,3 +367,12 @@ fuck
 No need for dirty language.^^^
 shit
 No need for dirty language.^^^
+How do you maintain healthy relationships.
+It sounds cliche but hard work and dedication.
+I see.^^^
+It's good.
+Cool, glad to hear it.^^^
+Why.
+The reasons are not obvious.^^^
+Why not?
+I just don't think it would be a good idea.^^^
