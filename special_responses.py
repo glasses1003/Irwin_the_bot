@@ -355,7 +355,7 @@ def synonym(inp):
 
   definition_dict = dictionary.synonym(word)
   response = "Synonyms of " + word + " are "
-  response += " ".join(definition_dict)
+  response += ", ".join(definition_dict)
 
   return(response)
 functions["synonym"] = synonym
@@ -379,7 +379,7 @@ def antonym(inp):
 
   definition_dict = dictionary.antonym(word)
   response = "Antonyms of " + word + " are "
-  response += " ".join(definition_dict)
+  response += ", ".join(definition_dict)
 
   return(response)
 functions["antonym"] = antonym
