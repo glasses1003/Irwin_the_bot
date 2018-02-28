@@ -240,7 +240,10 @@ def trig_func(inp):
     if i in inp:
       function = i
 
-  number = find_nums(inp)[0]
+  try:
+    number = find_nums(inp)[0]
+  except:
+    return("Trig function error.")
 
   if function == "":
     return("I couldn't understand what you were trying to say.")
