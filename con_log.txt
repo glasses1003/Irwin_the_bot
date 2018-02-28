@@ -25,11 +25,11 @@ What is 4r times 0c?
 multiply///
 Find the product of and.
 multiply///
-What is the sin of?
+What is the sin?
 trig///
-What is the cos of?
+What is the cos?
 trig///
-What is the tan of?
+What is the tan ?
 trig///
 sine
 trig///
@@ -37,11 +37,11 @@ cosine
 trig///
 tangent
 trig///
-sin of
+sin
 trig///
-cos of
+cos
 trig///
-tan of
+tan
 trig///
 What is divided by.
 divide///
@@ -384,4 +384,10 @@ synonym///
 antonym
 antonym///
 opposite
+antonym///
+synonyms of 
+synonym///
+antonyms of
+antonym///
+opposites of
 antonym///
