@@ -335,3 +335,51 @@ def define(inp):
 
   return(response)
 functions["define"] = define
+
+def synonym(inp):
+  simlified_inp = read.simplify(inp)
+  simlified_word_list = simlified_inp.split(" ")
+
+  word = simlified_word_list[0]
+
+  keywords = ["of", "antonym", "word"]
+
+  for i in range(len(keywords)):
+    if keywords[i] in simlified_word_list:
+      index = simlified_word_list.index(keywords[i]) + 1
+      try:
+        word = simlified_word_list[index]
+        break
+      except:
+        break
+
+  definition_dict = dictionary.synonym(word)
+  response = "Synonyms of " + word + " are "
+  response += " ".join(definition_dict)
+
+  return(response)
+functions["synonym"] = synonym
+
+def antonym(inp):
+  simlified_inp = read.simplify(inp)
+  simlified_word_list = simlified_inp.split(" ")
+
+  word = simlified_word_list[0]
+
+  keywords = ["of", "antonym", "word"]
+
+  for i in range(len(keywords)):
+    if keywords[i] in simlified_word_list:
+      index = simlified_word_list.index(keywords[i]) + 1
+      try:
+        word = simlified_word_list[index]
+        break
+      except:
+        break
+
+  definition_dict = dictionary.antonym(word)
+  response = "Antonyms of " + word + " are "
+  response += " ".join(definition_dict)
+
+  return(response)
+functions["antonym"] = antonym

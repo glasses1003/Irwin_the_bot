@@ -379,3 +379,9 @@ Why not?
 I just don't think it would be a good idea.^^^
 define
 define///
+synonym
+synonym///
+antonym
+antonym///
+opposite
+antonym///
