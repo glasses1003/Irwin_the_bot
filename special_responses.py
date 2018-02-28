@@ -324,7 +324,7 @@ def define(inp):
       except:
         break
 
-  definition_dict = dictionary.meaning("word")
+  definition_dict = dictionary.meaning(word)
   response = "The word " + word + " means "
 
   for key in definition_dict:
