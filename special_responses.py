@@ -48,8 +48,9 @@ def calculate(inp):
   operation_list = []
   numbers = find_nums(inp)
   #numbers searched separately because of issues with order
-  oper_char = "+/-*v^()"
+  oper_char = "+/-*v^()]"
   multi_char = ["sin", "cos", "tan"]
+  multi_implied = ["]("]
   all_list = oper_char
 
   num_part = ""
@@ -72,7 +73,7 @@ def calculate(inp):
   for i in range(len(operation_list)):
     current = operation_list[i]
 
-    if i != 0 and current == "(":
+    if i != 0 and current in multi_implied:
       previous = operation_list[i - 1]
 
       if previous not in oper_char:
@@ -103,11 +104,21 @@ def calculate(inp):
   #solve exponents
   for i in range(len(operation_list)):
     current = operation_list[i]
-    if i != 0 and i != (len(operation_list) - 1) and current == "^":
+    if i != 0 and i != (len(operation_list) - 1) and (current == "^"):
       previous = operation_list[i - 1]
       next = operation_list[i + 1]
       cut = [i-1, i+2]
       number = str(math.pow(float(previous),float(next)))
+      operation_list = operation_list[:cut[0]] + ["placeholder", number,"placeholder"] + operation_list[cut[1]:]
+  operation_list = [c for c in operation_list if c != 'placeholder']
+
+  #solve roots
+  for i in range(len(operation_list)):
+    current = operation_list[i]
+    if i != (len(operation_list) - 1) and current == "]":
+      next = operation_list[i + 1]
+      cut = [i, i + 2]
+      number = str(math.pow(float(next), 0.5))
       operation_list = operation_list[:cut[0]] + ["placeholder", number,"placeholder"] + operation_list[cut[1]:]
   operation_list = [c for c in operation_list if c != 'placeholder']
 
@@ -206,7 +217,7 @@ def do_math(inp):
     return(trig_func(inp))
 
   #main math solver
-  num_char = "1234567890.+()-*/^"
+  num_char = "1234567890.+()-*/^]"
   numbers_and_stuff = ""
   for i in inp:
     if i in num_char:
