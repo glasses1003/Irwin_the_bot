@@ -2,6 +2,8 @@ import datetime
 import read
 import math
 import classes
+from PyDictionary import PyDictionary
+dictionary = PyDictionary()
 
 #transfer all variables global variables to special_responses file
 
@@ -304,3 +306,32 @@ def area(inp):
   except:
     return("Did you want to find area? Specify the shape and provide two numbers.")
 functions["area"] = area
+
+def define(inp):
+  simlified_inp = read.simplify(inp)
+  simlified_word_list = simlified_inp.split(" ")
+
+  word = simlified_word_list[0]
+
+  keywords = ["def","define", "of", "word", "definition"]
+
+  for i in range(len(keywords)):
+    if keywords[i] in simlified_word_list:
+      index = simlified_word_list.index(keywords[i]) + 1
+      try:
+        word = simlified_word_list[index]
+        break
+      except:
+        break
+
+  definition_dict = dictionary.meaning("word")
+  response = "The word " + word + " means "
+
+  for key in definition_dict:
+    definition_list = definition_dict[key]
+    response += "as a " + key + " "
+    response += ", ".join(definition_list)
+    response += "; "
+
+  return(response)
+functions["define"] = define
