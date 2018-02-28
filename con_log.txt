@@ -17,7 +17,6 @@ add///
 add e5 g7 b0
 add///
 What is 5r plus 8ee?
-solve
 math///
 calculate
 math///

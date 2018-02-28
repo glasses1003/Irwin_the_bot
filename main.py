@@ -147,8 +147,10 @@ def respond_to(inp):
   #write context back to json
   read.write_json(context, context_file_name)
   return(response_string)
+
+
 def test():
-  start()
+  start("1234")
   while True:
     user_input = input("?: ")
     print(respond_to(user_input))

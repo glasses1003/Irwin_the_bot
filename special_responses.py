@@ -3,6 +3,8 @@ import read
 import math
 import classes
 
+#transfer all variables global variables to special_responses file
+
 functions = {}
 
 def sin(inp):
@@ -178,13 +180,40 @@ def divide(inp):
 functions["divide"] = divide
 
 def do_math(inp):
+  #doing math in words
+  numbers = find_nums(inp)
+  if len(numbers) == 0:
+    return("My math function couldn't find any numbers.")
+
+  keywords = ["add", "plus", "minus", "times", "subtract", "multipl", "divide", "root", "sin", "cos", "tan"]
+  current_keywords = []
+
+  for i in keywords:
+    if i in inp:
+      current_keywords.append(i)
+
+  if "add" in current_keywords or "plus" in current_keywords:
+    return(add(inp))
+  if "minus" in current_keywords or "subtract" in current_keywords:
+    return(subtract(inp))
+  if "times" in current_keywords or "multipl" in current_keywords:
+    return(multiply(inp))
+  if "divide" in current_keywords:
+    return(divide(inp))
+  if "root" in current_keywords:
+    return(root(inp))
+  if "sin" in current_keywords or "cos" in current_keywords or "tan" in current_keywords:
+    return(trig_func(inp))
+
+  #main math solver
   num_char = "1234567890.+()-*/^"
   numbers_and_stuff = ""
   for i in inp:
     if i in num_char:
       numbers_and_stuff += i
   if numbers_and_stuff.count("(") == numbers_and_stuff.count(")"):
-    return("The solution is " + str(calculate(numbers_and_stuff)))
+    solution = str(calculate(numbers_and_stuff))
+    return("The solution is " + solution)
   else:
     return("I'm sorry, your input doesn't have the same number of ( and ).")
 functions["math"] = do_math
@@ -243,10 +272,10 @@ def area(inp):
   try:
     if "square" in key_words or "rectangle" in key_words or "rect" in key_words:
       area = numbers[0] * numbers[1]
-      return(str(area) + ": of rectangle  b/h " + str(numbers[0]) + "/" + str(numbers[1]))
+      return(str(area) + ": area of rectangle  b/h " + str(numbers[0]) + "/" + str(numbers[1]))
     if "triangle" in key_words or "tri" in key_words:
       area = numbers[0]*numbers[1] * 0.5
-      return(str(area) + ": of triangle b/h " + str(numbers[0]) + "/" + str(numbers[1]))
+      return(str(area) + ": area of triangle b/h " + str(numbers[0]) + "/" + str(numbers[1]))
     if "circle" in key_words:
       radius = numbers[0]
       pi = math.pi
@@ -264,4 +293,3 @@ def area(inp):
   except:
     return("Did you want to find area? Specify the shape and provide two numbers.")
 functions["area"] = area
-
