@@ -342,7 +342,7 @@ def synonym(inp):
 
   word = simlified_word_list[0]
 
-  keywords = ["of", "antonym", "word"]
+  keywords = ["of", "synonym","synonyms", "word"]
 
   for i in range(len(keywords)):
     if keywords[i] in simlified_word_list:
@@ -366,7 +366,7 @@ def antonym(inp):
 
   word = simlified_word_list[0]
 
-  keywords = ["of", "antonym", "word"]
+  keywords = ["of", "antonym", "antonyms","word"]
 
   for i in range(len(keywords)):
     if keywords[i] in simlified_word_list:
