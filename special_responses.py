@@ -132,10 +132,10 @@ def calculate(inp):
       next = operation_list[i + 1]
       cut = [i-1, i+2]
       if current == "*":
-        number = float(previous)*float(next)
+        number = str(float(previous)*float(next))
         operation_list = operation_list[:cut[0]] + ["placeholder", number, "placeholder"] + operation_list[cut[1]:]
       if current == "/":
-        number = float(previous)/float(next)
+        number = str(float(previous)/float(next))
         operation_list = operation_list[:cut[0]] + ["placeholder", number, "placeholder"] + operation_list[cut[1]:]
   operation_list = [c for c in operation_list if c != 'placeholder']
 
