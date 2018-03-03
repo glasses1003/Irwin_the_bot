@@ -52,7 +52,7 @@ def calculate(inp):
   #numbers searched separately because of issues with order
   oper_char = "+/-*v^()]"
   multi_char = ["sin", "cos", "tan"]
-  multi_implied = ["]("]
+  multi_implied = "]("
   all_list = oper_char
 
   num_part = ""
@@ -74,7 +74,6 @@ def calculate(inp):
   #add multiplication where it is assumed as in 2(4 + 6) to become 2 * (4 + 6)
   for i in range(len(operation_list)):
     current = operation_list[i]
-
     if i != 0 and current in multi_implied:
       previous = operation_list[i - 1]
 
