@@ -325,15 +325,17 @@ def define(inp):
         break
       except:
         break
+  try:
+    definition_dict = dictionary.meaning(word)
+    response = "The word " + word + " means "
 
-  definition_dict = dictionary.meaning(word)
-  response = "The word " + word + " means "
-
-  for key in definition_dict:
-    definition_list = definition_dict[key]
-    response += "as a " + key + " "
-    response += ", ".join(definition_list)
-    response += "; "
+    for key in definition_dict:
+      definition_list = definition_dict[key]
+      response += "as a " + key + " "
+      response += ", ".join(definition_list)
+      response += "; "
+  except:
+    response = "I couldn't find " + word "."
 
   return(response)
 functions["define"] = define
@@ -354,10 +356,12 @@ def synonym(inp):
         break
       except:
         break
-
-  definition_dict = dictionary.synonym(word)
-  response = "Synonyms of " + word + " are "
-  response += ", ".join(definition_dict)
+  try:
+    definition_dict = dictionary.synonym(word)
+    response = "Synonyms of " + word + " are "
+    response += ", ".join(definition_dict)
+  except:
+    response = "I couldn't find synonyms for " + word + "."
 
   return(response)
 functions["synonym"] = synonym
@@ -379,9 +383,12 @@ def antonym(inp):
       except:
         break
 
-  definition_dict = dictionary.antonym(word)
-  response = "Antonyms of " + word + " are "
-  response += ", ".join(definition_dict)
+  try:
+    definition_dict = dictionary.antonym(word)
+    response = "Antonyms of " + word + " are "
+    response += ", ".join(definition_dict)
+  except:
+    response = "I couldn't find antonyms for " + word + "."
 
   return(response)
 functions["antonym"] = antonym
