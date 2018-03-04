@@ -335,7 +335,7 @@ def define(inp):
       response += ", ".join(definition_list)
       response += "; "
   except:
-    response = "I couldn't find " + word "."
+    response = "I couldn't find " + word + "."
 
   return(response)
 functions["define"] = define
@@ -392,3 +392,4 @@ def antonym(inp):
 
   return(response)
 functions["antonym"] = antonym
+
